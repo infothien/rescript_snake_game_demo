@@ -1,16 +1,19 @@
 {
   "name": "reprocessing-example",
-  "sources": "src",
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
   "bs-dependencies": ["reprocessing"],
   "entries": [{
-    "backend": "bytecode",
-    "main-module": "IndexHot"
-  },{
-    "backend": "native",
-    "main-module": "Index"
-  },{
     "backend": "js",
     "main-module": "Index"
   }],
   "refmt": 3,
+  "warnings": {
+    "number": "-48-30",
+    "error": "+A+8+11+12+16+26+27+31+32+33+34+35+39+44+45+101+102+104+105"
+  }
 }

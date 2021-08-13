@@ -1,38 +1,24 @@
-Reprocessing Example
----
+## This is a simple project to introduce how to build a snake game with rescript
 
-Clone this repo to get started with [Reprocessing](https://github.com/schmavery/reprocessing).
+### Inspired by https://github.com/schmavery/reprocessing#projects-using-reprocessing
 
-Demos are on other branches:
+### Documents
 
-- [Flappy Bird](https://github.com/bsansouci/reprocessing-example/tree/livestream-flappybird)
-- [2048](https://github.com/bsansouci/reprocessing-example/tree/2048)
+\_ https://rescript-lang.org/: official document for learning about rescript
 
-...and more on the [Reprocessing repo](https://github.com/schmavery/reprocessing#projects-using-reprocessing).
-
-## How to
-```
-git clone https://github.com/bsansouci/reprocessing-example.git
-```
+\_ https://schmavery.github.io/reprocessing/: simplest way to try reprocessing (which will ease the way to build graphic and game)
 
 ### Install
 
-```
-npm install
-```
+`npm install` or `yarn`
 
 ### Build
-```
-npm run build
-```
+
+`npm run build` or `yarn build`
+
+Development mode: you can use `yarn build -w` to keep compiling the codes when changes
 
 ### Start
-```
-npm start
-```
 
-To build to JS run `npm run build:web` and then run a static server, like `python -m SimpleHTTPServer` and go to `localhost:8000`. If you're using safari you can simply open the `index.html` and tick `Develop > Disable Cross-Origin Restrictions`.
-
-To build to native run `npm run build:native` and run `npm run start:native`
-
-The build system used is [bsb-native](https://github.com/bsansouci/bucklescript).
+`npm start` or `yarn start`: to start simple static simple http server (no hot reloading for now)
+It will start the server at `localhost:8000`
