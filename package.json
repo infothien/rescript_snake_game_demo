@@ -1,14 +1,15 @@
 {
   "name": "reprocessing-example",
   "scripts": {
-    "start": "python -m SimpleHTTPServer",
-    "build": "bsb -make-world",
+    "start": "python3 -m SimpleHTTPServer",
+    "build": "bsb -make-world -w",
     "clean": "bsb -clean-world"
   },
   "dependencies": {
     "reprocessing": "schmavery/reprocessing"
   },
   "devDependencies": {
-    "bs-platform": "^9.0.2"
+    "bs-platform": "^9.0.2",
+    "rescript": "10.1.2"
   }
 }
